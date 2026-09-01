@@ -1,5 +1,5 @@
 # examen_git
-# examen_git
+
 poner aqui el nombre de usuario de github.
 1.- 
 2.-
@@ -37,11 +37,19 @@ poner aqui el nombre de usuario de github.
 34.-
 35.-
 36.-
+<<<<<<< HEAD
 37.-
 38.-
 39.-
 40.-
 41.-
+=======
+37.-Camilo Mori | Usuario Github: Kamklo09
+38.- Sebastian Pereira | Usuario Git: QndresR
+39.-Vicente Caroca
+40.- Felipe Gutierrez
+41.- 
+>>>>>>> origin/main
 42.-
 43.-
 44.-
