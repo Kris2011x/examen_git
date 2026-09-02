@@ -1,4 +1,3 @@
-
 # examen_git
 # Liza Molina 
 # ultima fecha de revisión con nota sera este viernes 31 de Julio 
@@ -22,7 +21,7 @@ poner aqui el nombre de usuario de github.
 15.-
 16.-
 17.-
-18.-
+18.- gianella65
 19.-
 20.-
 21.-
@@ -49,3 +48,4 @@ poner aqui el nombre de usuario de github.
 42.-
 43.-
 44.-Cristian Villalobos/Kris2011x
+
