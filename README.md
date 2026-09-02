@@ -11,7 +11,7 @@ poner aqui el nombre de usuario de github.
 5.-
 6.-
 7.-
-8.-
+8.- Cristian Villalobos/Kris2011x
 9.-
 10.- Mikosss
 11.- ccreativebboy
@@ -47,4 +47,4 @@ poner aqui el nombre de usuario de github.
 41.- 
 42.-
 43.-
-44.-Cristian Villalobos/Kris2011x
+44.-
