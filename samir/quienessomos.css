@@ -1,0 +1,145 @@
+/* Configuración general del fondo y la estructura del sitio */
+body {
+    /* Color de fondo azul verdoso (aquamarine) para la pantalla */
+    background-color: aquamarine;
+    /* Elimina los márgenes predeterminados del navegador */
+    margin: 0;
+    /* Aplica la fuente sans-serif en todo el cuerpo */
+    font-family: sans-serif;
+    /* Garantiza que la página mida al menos el 100% de la pantalla */
+    min-height: 100vh;
+    /* Activa el modelo Flexbox para posicionar los bloques */
+    display: flex;
+    /* Coloca los elementos uno debajo del otro (columna) */
+    flex-direction: column;
+    /* Centra los bloques horizontalmente */
+    align-items: center;
+    /* Centra el contenido verticalmente en la pantalla */
+    justify-content: center;
+}
+
+/* Sección del encabezado */
+header {
+    /* Centra el texto del título principal */
+    text-align: center;
+    /* Agrega un margen inferior de 20px para separarlo del contenido */
+    margin-bottom: 20px;
+}
+
+/* Título principal de la página (h1) */
+h1 {
+    /* Color de texto morado/azul oscuro */
+    color: rgb(63, 20, 180);
+    /* Tamaño de la letra a 32 píxeles */
+    font-size: 32px;
+    /* Cambia todo el texto a letras mayúsculas */
+    text-transform: uppercase;
+}
+
+/* Sección principal que contiene las tarjetas */
+main {
+    /* Activa Flexbox para acomodar las secciones o tarjetas */
+    display: flex;
+    /* Permite pasar a otra fila si no caben los bloques en pantalla */
+    flex-wrap: wrap;
+    /* Centra las tarjetas horizontalmente */
+    justify-content: center;
+    /* Crea un espacio de 30px entre tarjeta y tarjeta */
+    gap: 30px;
+    /* Ocupa el 100% del ancho disponible */
+    width: 100%;
+    /* Limita el ancho máximo a 900 píxeles */
+    max-width: 900px;
+    /* Relleno interno de 20 píxeles */
+    padding: 20px;
+}
+
+/* Estilos aplicados simultáneamente a las tarjetas con clase 'samir123' y 'peña123' */
+.samir123, .peña123 {
+    /* Fondo azul brillante para ambas tarjetas */
+    background-color: #007bff;
+    /* Color de texto blanco dentro del bloque */
+    color: white;
+    /* Ancho fijo de 300 píxeles para cada tarjeta */
+    width: 300px;
+    /* Espaciado interno de 30 píxeles */
+    padding: 30px;
+    /* Bordes redondeados a 12 píxeles */
+    border-radius: 12px;
+    /* Sombra negra semi-transparente para dar profundidad */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    /* Animación de flotación infinita que dura 3 segundos */
+    animation: flotar 3s ease-in-out infinite;
+    /* Activa Flexbox dentro de la tarjeta */
+    display: flex;
+    /* Ordena el contenido interno en columna */
+    flex-direction: column;
+    /* Centra el texto y contenido verticalmente */
+    justify-content: center;
+}
+
+/* Regla específica para el segundo cubo o tarjeta */
+.peña123 {
+    /* Retrasa el inicio de la animación 0.5s para no flotar al mismo tiempo que el primero */
+    animation-delay: 0.5s;
+}
+
+/* Títulos secundarios (h2) dentro de los bloques */
+h2 {
+    /* Tamaño de fuente a 20 píxeles */
+    font-size: 20px;
+    /* Quita el espacio superior por defecto */
+    margin-top: 0;
+    /* Centra el texto del subtítulo */
+    text-align: center;
+}
+
+/* Subtítulos de nivel 3 (h3) */
+h3 {
+    /* Tamaño de fuente a 18 píxeles */
+    font-size: 18px;
+    /* Quita el espacio superior por defecto */
+    margin-top: 0;
+    /* Centra el texto del subtítulo interno */
+    text-align: center;
+}
+
+/* Reglas comunes para párrafos y listas */
+p, li {
+    /* Tamaño de texto de 15 píxeles */
+    font-size: 15px;
+    /* Altura de línea de 1.5 para una lectura más cómoda */
+    line-height: 1.5;
+}
+
+/* Listas desordenadas dentro de las tarjetas */
+ul {
+    /* Sangría izquierda de 20px para alinear los puntos/viñetas */
+    padding-left: 20px;
+    /* Elimina el margen externo por defecto */
+    margin: 0;
+}
+
+/* Elementos o viñetas de la lista */
+li {
+    /* Espacio inferior de 8px entre cada meta */
+    margin-bottom: 8px;
+}
+
+/* Secciones del pie de página */
+footer {
+    /* Centra el texto del pie de página */
+    text-align: center;
+    /* Separa el pie de página 20px hacia abajo del contenido */
+    margin-top: 20px;
+}
+
+/* Párrafo dentro del pie de página */
+footer p {
+    /* Color del texto morado/azul oscuro */
+    color: rgb(63, 20, 180);
+    /* Texto en negrita para resaltar */
+    font-weight: bold;
+    /* Tamaño de fuente de 16 píxeles */
+    font-size: 16px;
+}

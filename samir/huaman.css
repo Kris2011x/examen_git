@@ -1,0 +1,113 @@
+/* Configuración del fondo general y centrado de la pantalla completa */
+body {
+    /* Define el color de fondo azul verdoso (aquamarine) para toda la página */
+    background-color: aquamarine;
+    /* Elimina los márgenes por defecto que traen los navegadores */
+    margin: 0;
+    /* Aplica una tipografía limpia sin serifas en todo el texto */
+    font-family: sans-serif;
+    /* Asegura que el cuerpo ocupe mínimo el 100% del alto de la pantalla (Viewport Height) */
+    min-height: 100vh;
+    /* Activa Flexbox para organizar el contenido interior */
+    display: flex;
+    /* Centra el contenedor horizontalmente */
+    justify-content: center;
+    /* Centra el contenedor verticalmente */
+    align-items: center;
+}
+
+/* Caja intermedia que envuelve el tarjeta/formulario */
+.contenedor {
+    /* Activa Flexbox para centrar su propio contenido interno */
+    display: flex;
+    /* Centra horizontalmente lo que esté dentro de la caja */
+    justify-content: center;
+    /* Centra verticalmente lo que esté dentro de la caja */
+    align-items: center;
+    /* Hace que la caja use todo el ancho disponible */
+    width: 100%;
+    /* Añade espacio interno de 20px alrededor para evitar que toque los bordes en pantallas chicas */
+    padding: 20px;
+}
+
+/* La tarjeta o bloque principal del formulario ("el cubo") */
+.cubo {
+    /* Pinta el fondo del cuadro con un color azul brillante */
+    background-color: #007bff; 
+    /* Cambia todo el texto interno a color blanco */
+    color: white;
+    /* Toma todo el ancho posible hasta llegar al límite de max-width */
+    width: 100%;
+    /* Limita el ancho máximo del cuadro a 400 píxeles para que no se extienda demasiado */
+    max-width: 400px;
+    /* Otorga un espacio o relleno interno de 30px hacia adentro */
+    padding: 30px;
+    /* Redondea las esquinas del cuadro con un radio de 12px */
+    border-radius: 12px;
+    /* Centra los elementos de texto por defecto dentro del cuadro */
+    text-align: center;
+    /* Aplica una sombra suave negra semi-transparente para dar un efecto flotante/3D */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Estilos para el título del formulario */
+h1 {
+    /* Elimina cualquier espacio superior para pegar el título arriba */
+    margin-top: 0;
+    /* Separa el título 20px del formulario que está más abajo */
+    margin-bottom: 20px;
+    /* Establece el tamaño de la letra a 24 píxeles */
+    font-size: 24px;
+}
+
+/* Organización del formulario */
+form {
+    /* Usa Flexbox para acomodar las filas */
+    display: flex;
+    /* Coloca los elementos uno debajo de otro en dirección vertical (columna) */
+    flex-direction: column;
+    /* Alinea el texto dentro del formulario a la izquierda para mejor lectura */
+    text-align: left;
+}
+
+/* Formato de las cajas/párrafos que encierran a los labels e inputs */
+p {
+    /* Otorga un margen vertical de 10px arriba/abajo y 0 a los lados */
+    margin: 10px 0;
+    /* Usa Flexbox en cada párrafo para apilar la etiqueta encima del cuadro de texto */
+    display: flex;
+    /* Coloca la etiqueta (label) arriba y la casilla de entrada (input) abajo */
+    flex-direction: column;
+}
+
+/* Estilos para las etiquetas que nombran a cada casilla */
+label {
+    /* Pone las letras en negrita para resaltarlas */
+    font-weight: bold;
+    /* Separa la etiqueta 8px del campo donde el usuario escribe */
+    margin-bottom: 8px;
+    /* Ajusta el tamaño de letra de la etiqueta a 14px */
+    font-size: 14px;
+}
+
+/* Estilos aplicados a todas las casillas de texto y al menú desplegable */
+input, select {
+    /* Espaciado o relleno interno de 10px dentro del cuadro para escribir con comodidad */
+    padding: 10px;
+    /* Quita el borde negro feo que trae el navegador por defecto */
+    border: none;
+    /* Redondea las esquinas de los bordes del campo a 6px */
+    border-radius: 6px;
+    /* Ajusta el tamaño de la letra donde se escribe a 15px */
+    font-size: 15px;
+    /* Quita la línea de contorno nativa al seleccionar la casilla */
+    outline: none;
+    /* Mantiene la misma tipografía sin serifas del resto de la página */
+    font-family: sans-serif;
+}
+
+/* Efecto al hacer clic o posicionarse sobre una casilla de texto o menú desplegable */
+input:focus, select:focus {
+    /* Agrega un resplandor o sombra blanca alrededor de la casilla enfocada */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}

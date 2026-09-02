@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="huaman.css">
+</head>
+<!-- El <body> contiene todo el contenido visible de la página web -->
+<body>
+
+    <!-- Bloque <div> con la clase "contenedor", funciona como una caja externa para envolver y centrar todo el contenido -->
+    <div class="contenedor">
+
+        <!-- Etiqueta semántica <main> con la clase "cubo", representa el bloque central de la interfaz (la caja del formulario) -->
+        <main class="cubo">
+
+            <!-- Título de nivel 1 (el encabezado más importante de la página) -->
+            <h1>Formulario de samir</h1>
+
+            <!-- Inicio del formulario. 
+                 'action="/registro"' indica a dónde se enviarán los datos al presionar enviar. 
+                 'method="post"' indica que los datos viajarán de forma oculta en el cuerpo del envío (ideal para seguridad) -->
+            <form action="/registro" method="post">
+
+                <!-- Bloque de párrafo <p> usado aquí para dar espacio vertical entre cada campo -->
+                <p>
+                    <!-- Etiqueta visible del campo. 'for="nombre_completo"' la conecta directamente con el input con ese id -->
+                    <label for="nombre_completo">Tu nombre completo:</label>
+
+                    <!-- Campo de texto estándar. 
+                         type="text" (permite cualquier letra o número) 
+                         id="nombre_completo" (identificador único para JS/CSS/Label) 
+                         name="nombre_completo" (el nombre de la variable que llegará al servidor) 
+                         placeholder="..." (texto de ayuda que desaparece al escribir) -->
+                    <input type="text" id="nombre_completo" name="nombre_completo" placeholder="Ingresa tu nombre">
+                </p>
+
+                <!-- Bloque contenedor del campo de Correo -->
+                <p>
+                    <!-- Etiqueta explicativa vinculada al correo -->
+                    <label for="correo">Correo electrónico:</label>
+
+                    <!-- Campo especializado en correos. 
+                         type="email" fuerza al navegador a validar que el usuario ponga un formato válido (como texto@dominio.com) -->
+                    <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo">
+                </p>
+
+                <!-- Bloque contenedor del campo de Edad -->
+                <p>
+                    <!-- Etiqueta vinculada al campo edad -->
+                    <label for="edad">Edad:</label>
+
+                    <!-- Campo numérico. 
+                         type="number" solo permite teclear números y habilita flechitas. 
+                         min="0" evita números negativos. 
+                         max="120" establece el límite superior de edad introducible -->
+                    <input type="number" id="edad" name="edad" min="0" max="120" placeholder="Ej. 15">
+                </p>
+
+                <!-- Bloque contenedor del campo de Curso -->
+                <p>
+                    <!-- Etiqueta explicativa del curso -->
+                    <label for="anio">Curso :</label>
+
+                    <!-- Campo de texto normal para escribir manualmente el curso o año académico -->
+                    <input type="text" id="anio" name="anio" placeholder="Ej. Primero Medio">
+                </p>
+
+                <!-- Bloque contenedor de la lista desplegable de País -->
+                <p>
+                    <!-- Etiqueta vinculada a la selección de país -->
+                    <label for="pais">País:</label>
+
+                    <!-- Elemento <select> crea un menú desplegable de opciones elegibles -->
+                    <select id="pais" name="pais">
+
+                        <!-- Opción inicial en blanco o por defecto (value="" vacío significa que no se ha elegido nada aún) -->
+                        <option value="">Selecciona tu país</option>
+
+                        <!-- Opción individual: el usuario lee "Chile", pero el servidor recibe value="chile" -->
+                        <option value="chile">Chile</option>
+
+                        <!-- Opción individual para Argentina -->
+                        <option value="argentina">Argentina</option>
+
+                        <!-- Opción individual para Perú -->
+                        <option value="peru">Perú</option>
+
+                        <!-- Opción individual para Colombia -->
+                        <option value="colombia">Colombia</option>
+
+                        <!-- Opción individual para México -->
+                        <option value="mexico">México</option>
+                    </select>
+                </p>
+
+            <!-- Cierre de la etiqueta del formulario -->
+            </form>
+
+        <!-- Cierre del contenido principal del cubo -->
+        </main>
+
+    <!-- Cierre de la caja contenedora externa -->
+    </div>
+
+<!-- Cierre del cuerpo visible de la página -->
+</body>
+
+<!-- Cierre definitivo del documento HTML -->
+</html>

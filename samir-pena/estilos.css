@@ -1,0 +1,149 @@
+/* Configuración general del fondo y la estructura del cuerpo */
+body {
+    /* Define el color de fondo azul verdoso (aquamarine) para la página */
+    background-color: aquamarine;
+    /* Quita los márgenes por defecto del navegador */
+    margin: 0;
+    /* Aplica la fuente sans-serif limpia en toda la interfaz */
+    font-family: sans-serif;
+    /* Asegura que ocupe al menos el 100% del alto de la pantalla */
+    min-height: 100vh;
+    /* Activa Flexbox para acomodar la barra de navegación, el contenido y el footer */
+    display: flex;
+    /* Organiza los elementos verticales en columna */
+    flex-direction: column;
+}
+
+/* Barra de navegación superior */
+nav {
+    /* Color de fondo oscuro casi negro */
+    background-color: #222;
+    /* Relleno interno arriba y abajo de 15px, y 0 a los lados */
+    padding: 15px 0;
+    /* Centra los enlaces del menú */
+    text-align: center;
+    /* Mantiene la barra fija arriba mientras se desplaza la página */
+    position: sticky;
+    /* Pega el menú en la parte superior */
+    top: 0;
+    /* Garantiza que el menú quede por encima de las tarjetas */
+    z-index: 100;
+    /* Añade una sombra ligera debajo de la barra */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Estilo para los enlaces de la barra de navegación */
+nav a {
+    /* Color de letra blanco */
+    color: #fff;
+    /* Elimina el subrayado por defecto de los enlaces */
+    text-decoration: none;
+    /* Espaciado de 15px a la izquierda y derecha entre enlaces */
+    margin: 0 15px;
+    /* Texto en negrita para resaltar */
+    font-weight: bold;
+    /* Tamaño de la letra a 16px */
+    font-size: 16px;
+    /* Cambia todo el texto a mayúsculas */
+    text-transform: uppercase;
+}
+
+/* Efecto al pasar el cursor sobre los enlaces del menú */
+nav a:hover {
+    /* Cambia el texto a color azul claro */
+    color: #4da6ff;
+}
+
+/* Contenedor principal que agrupa los bloques de información */
+.contenedor {
+    /* Activa Flexbox para distribuir las tarjetas */
+    display: flex;
+    /* Permite pasar a la siguiente fila si las tarjetas no entran */
+    flex-wrap: wrap;
+    /* Centra las tarjetas horizontalmente */
+    justify-content: center;
+    /* Separa las tarjetas 40 píxeles entre sí */
+    gap: 40px;
+    /* Espacio o relleno alrededor del contenedor */
+    padding: 60px 20px;
+    /* Empuja el footer al fondo ocupando todo el espacio libre */
+    flex-grow: 1;
+}
+
+/* Estilo para las tarjetas azules o "cubos" */
+.cubo {
+    /* Fondo azul brillante */
+    background-color: #007bff; 
+    /* Texto interno de color blanco */
+    color: white;
+    /* Ancho fijo de 300 píxeles */
+    width: 300px;
+    /* Espacio o relleno interno de 30 píxeles */
+    padding: 30px;
+    /* Bordes redondeados a 12 píxeles */
+    border-radius: 12px;
+    /* Centra el texto de la tarjeta */
+    text-align: center;
+    /* Sombra negra semi-transparente para dar relieve */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    /* Llama a la animación de flotación */
+    animation: flotar 3s ease-in-out infinite; 
+    /* Activa Flexbox interno para alinear elementos */
+    display: flex;
+    /* Alinea el contenido interno en columna */
+    flex-direction: column;
+    /* Centra la foto, el título y la lista al medio */
+    align-items: center;
+}
+
+/* Configuración de las listas dentro de los cubos */
+.cubo ul {
+    /* Alinea las viñetas y texto a la izquierda para mejor lectura */
+    text-align: left;
+    /* Otorga espacio a la izquierda para los puntos de la lista */
+    padding-left: 20px;
+    /* Separa la lista 15px del elemento de arriba */
+    margin-top: 15px;
+}
+
+/* Elementos individuales de la lista */
+.cubo li {
+    /* Separa cada hito 10px del siguiente */
+    margin-bottom: 10px;
+    /* Espaciado cómodo entre líneas de texto */
+    line-height: 1.4;
+}
+
+/* Formato para las fotos circulares de la historia */
+img {
+    /* Ancho fijo de 100 píxeles */
+    width: 100px;
+    /* Alto fijo de 100 píxeles */
+    height: 100px;
+    /* Redondea completamente la imagen (círculo) */
+    border-radius: 50%;
+    /* Recorta la foto sin deformar el rostro */
+    object-fit: cover;
+    /* Borde blanco sólido de 3 píxeles */
+    border: 3px solid white;
+}
+
+/* Estilo para párrafos generales de la página */
+p {
+    /* Texto en tono morado/azul oscuro */
+    color: rgb(63, 20, 180);
+    /* Texto en negrita */
+    font-weight: bold;
+    /* Tamaño de fuente a 18 píxeles */
+    font-size: 18px;
+}
+
+/* Pie de página con el nombre del creador */
+.footer-form {
+    /* Centra el texto del autor */
+    text-align: center;
+    /* Relleno o espacio interno de 20 píxeles */
+    padding: 20px;
+    /* Fondo blanco semi-transparente para destacar */
+    background-color: rgba(255, 255, 255, 0.5);
+}

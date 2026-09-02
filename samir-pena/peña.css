@@ -1,0 +1,157 @@
+/* Configuración del fondo y la estructura global del cuerpo */
+body {
+    /* Fondo de color azul verdoso (aquamarine) para la página */
+    background-color: aquamarine;
+    /* Elimina los márgenes externos predeterminados del navegador */
+    margin: 0;
+    /* Aplica una fuente limpia tipo sans-serif a todo el sitio */
+    font-family: sans-serif;
+    /* Asegura que la página ocupe al menos el 100% de la altura de la pantalla */
+    min-height: 100vh;
+    /* Activa Flexbox para distribuir los elementos */
+    display: flex;
+    /* Organiza los bloques en dirección vertical (columna) */
+    flex-direction: column;
+    /* Centra los elementos hijos horizontalmente en la pantalla */
+    align-items: center;
+}
+
+/* Sección del encabezado superior */
+header {
+    /* Centra el texto dentro del header */
+    text-align: center;
+    /* Aplica un espacio interno: 30px arriba/abajo y 20px a los lados */
+    padding: 30px 20px;
+}
+
+/* Estilo para el título principal (h1) */
+h1 {
+    /* Color de letra morado/azul oscuro */
+    color: rgb(63, 20, 180);
+    /* Convierte todo el texto del título a mayúsculas */
+    text-transform: uppercase;
+    /* Tamaño de fuente a 28 píxeles */
+    font-size: 28px;
+    /* Elimina el margen alrededor del título */
+    margin: 0;
+}
+
+/* Contenedor principal que agrupa las tarjetas */
+.contenedor {
+    /* Activa Flexbox para ordenar los bloques internos */
+    display: flex;
+    /* Permite que los elementos pasen a la siguiente línea si no entran */
+    flex-wrap: wrap;
+    /* Centra los bloques horizontalmente */
+    justify-content: center;
+    /* Separa las tarjetas 40 píxeles entre sí */
+    gap: 40px;
+    /* Espacio interno de 20 píxeles alrededor */
+    padding: 20px;
+    /* Ancho máximo para evitar que se extienda demasiado en monitores grandes */
+    max-width: 1200px;
+    /* Permite que el contenedor ocupe el espacio disponible y empuje el footer hacia abajo */
+    flex-grow: 1;
+}
+
+/* Estilo base para cada tarjeta ("cubo") */
+.cubo {
+    /* Color de texto blanco */
+    color: white;
+    /* Ancho fijo de 320 píxeles por tarjeta */
+    width: 320px;
+    /* Espaciado interno de 30 píxeles */
+    padding: 30px;
+    /* Redondea las esquinas a 12 píxeles */
+    border-radius: 12px;
+    /* Centra el texto por defecto */
+    text-align: center;
+    /* Sombra negra semi-transparente para dar un efecto flotante/3D */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    /* Aplica la animación 'flotar' durante 3 segundos de manera infinita */
+    animation: flotar 3s ease-in-out infinite; 
+    /* Activa Flexbox interno en la tarjeta */
+    display: flex;
+    /* Alinea el contenido interno en columna vertical */
+    flex-direction: column;
+    /* Centra verticalmente el contenido dentro de la tarjeta */
+    justify-content: center;
+}
+
+/* Personalización del primer cubo mediante la clase específica */
+.samir123 {
+    /* Fondo azul verdoso (coincide con el fondo de la página) */
+    background-color: aquamarine;
+}
+
+/* Personalización del segundo cubo mediante la clase específica */
+.peña123 {
+    /* Fondo azul cian (aqua) para diferenciarse */
+    background-color: aqua;
+    /* Retrasa el inicio de la animación 0.5s para que no floten al mismo tiempo */
+    animation-delay: 0.5s;
+}
+
+/* Definición de la animación de flotación */
+@keyframes flotar {
+    /* Inicio de la animación: posición original */
+    0% { transform: translateY(0px); }
+    /* Punto medio: eleva la tarjeta 15 píxeles hacia arriba */
+    50% { transform: translateY(-15px); }
+    /* Final: regresa a la posición inicial */
+    100% { transform: translateY(0px); }
+}
+
+/* Estilo para los títulos secundarios (h2) dentro de las tarjetas */
+h2 {
+    /* Tamaño de letra de 20 píxeles */
+    font-size: 20px;
+    /* Elimina el margen superior */
+    margin-top: 0;
+    /* Separa el título 15 píxeles de la lista que tiene abajo */
+    margin-bottom: 15px;
+    /* Transforma el texto del subtítulo a mayúsculas */
+    text-transform: uppercase;
+}
+
+/* Formato para las listas desordenadas dentro de los cubos */
+.cubo ul {
+    /* Alinea el texto de los puntos a la izquierda para mejor lectura */
+    text-align: left;
+    /* Sangría izquierda de 20px para la sangría de los viñetas */
+    padding-left: 20px;
+    /* Elimina márgenes externos de la lista */
+    margin: 0;
+}
+
+/* Formato para cada viñeta o punto de la lista */
+.cubo li {
+    /* Separa cada hito o sueño 10 píxeles del siguiente */
+    margin-bottom: 10px;
+    /* Tamaño de texto a 15 píxeles */
+    font-size: 15px;
+    /* Espaciado interlineal suave para textos largos */
+    line-height: 1.4;
+}
+
+/* Estilo para la sección del pie de página */
+.footer-form {
+    /* Centra el texto del pie de página */
+    text-align: center;
+    /* Relleno interno de 20 píxeles */
+    padding: 20px;
+    /* Separa el pie de página 20 píxeles del contenedor principal */
+    margin-top: 20px;
+}
+
+/* Estilo específico para el texto dentro del pie de página */
+.footer-form p {
+    /* Color de letra morado/azul oscuro */
+    color: rgb(63, 20, 180);
+    /* Aplica negrita al texto */
+    font-weight: bold;
+    /* Tamaño de fuente a 18 píxeles */
+    font-size: 18px;
+    /* Elimina márgenes por defecto */
+    margin: 0;
+}

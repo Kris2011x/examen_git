@@ -1,0 +1,178 @@
+/* Configuración del cuerpo de la página */
+body {
+    /* Fondo azul verdoso (aquamarine) para todo el sitio */
+    background-color: aquamarine;
+    /* Elimina márgenes exteriores por defecto del navegador */
+    margin: 0;
+    /* Aplica tipografía sans-serif limpia en toda la página */
+    font-family: sans-serif;
+    /* Mantiene un alto mínimo del 100% de la ventana visible */
+    min-height: 100vh;
+    /* Activa Flexbox para estructurar el contenido verticalmente */
+    display: flex;
+    /* Alinea los bloques en columna (uno debajo de otro) */
+    flex-direction: column;
+    /* Centra los bloques hijos horizontalmente */
+    align-items: center;
+}
+
+/* Estilos de la sección superior (encabezado) */
+.header-principal {
+    /* Centra todo el texto dentro del encabezado */
+    text-align: center;
+    /* Agrega un relleno interno: 30px arriba/abajo y 20px a los lados */
+    padding: 30px 20px;
+}
+
+/* Estilo específico para el título h2 dentro del encabezado */
+.header-principal h2 {
+    /* Pinta las letras de color morado/azul oscuro */
+    color: rgb(63, 20, 180);
+    /* Transforma todo el texto a mayúsculas */
+    text-transform: uppercase;
+    /* Tamaño de fuente a 24 píxeles */
+    font-size: 24px;
+    /* Separa el título 15px de la imagen que está debajo */
+    margin-bottom: 15px;
+}
+
+/* Estilos aplicados a la imagen del logo */
+img {
+    /* Ancho fijo de 400 píxeles */
+    width: 400px;
+    /* Alto fijo de 400 píxeles */
+    height: 400px;
+    /* Redondea los bordes al 50% para hacer la imagen totalmente circular */
+    border-radius: 50%;
+    /* Recorta la imagen para que llene el círculo sin deformarse ni estirarse */
+    object-fit: cover;
+    /* Añade un borde blanco sólido de 3 píxeles alrededor */
+    border: 3px solid white;
+}
+
+/* Zona principal que envuelve los bloques o tarjetas */
+.contenedor {
+    /* Activa Flexbox para distribuir las tarjetas */
+    display: flex;
+    /* Permite que los elementos pasen a la siguiente fila si no entran */
+    flex-wrap: wrap;
+    /* Centra horizontalmente las tarjetas en la pantalla */
+    justify-content: center;
+    /* Crea un espacio de 40 píxeles entre cada tarjeta */
+    gap: 40px;
+    /* Relleno interno de 20 píxeles */
+    padding: 20px;
+    /* Ancho máximo del contenedor para que no se expanda demasiado en pantallas grandes */
+    max-width: 1200px;
+    /* Permite que el contenedor ocupe todo el espacio vertical disponible */
+    flex-grow: 1;
+}
+
+/* Estilo base para cada tarjeta ("cubo") */
+.cubo {
+    /* Fondo azul brillante */
+    background-color: #007bff; 
+    /* Texto de color blanco */
+    color: white;
+    /* Ancho fijo de 320 píxeles por tarjeta */
+    width: 320px;
+    /* Espacio interno de 30 píxeles */
+    padding: 30px;
+    /* Redondea las esquinas a 12 píxeles */
+    border-radius: 12px;
+    /* Centra el texto por defecto */
+    text-align: center;
+    /* Aplica sombra flotante negra transparente */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    /* Activa la animación 'flotar' de 3 segundos, suave y que se repite infinitamente */
+    animation: flotar 3s ease-in-out infinite; 
+    /* Flexbox interno para organizar el contenido verticalmente */
+    display: flex;
+    flex-direction: column;
+    /* Centra el contenido verticalmente dentro del cubo */
+    justify-content: center;
+}
+
+/* Retrasa 0.5 segundos el inicio de la animación en la segunda tarjeta */
+.cubo:nth-child(2) { 
+    animation-delay: 0.5s; 
+}
+
+/* Retrasa 1 segundo el inicio de la animación en la tercera tarjeta */
+.cubo:nth-child(3) { 
+    animation-delay: 1s; 
+}
+
+/* Reglas de la animación para crear el efecto de flotación */
+@keyframes flotar {
+    /* Posición inicial */
+    0% { transform: translateY(0px); }
+    /* Punto medio: eleva la tarjeta 15 píxeles hacia arriba */
+    50% { transform: translateY(-15px); }
+    /* Regresa a la posición inicial */
+    100% { transform: translateY(0px); }
+}
+
+/* Títulos h1 genéricos */
+h1 {
+    /* Tamaño de letra de 20 píxeles */
+    font-size: 20px;
+    /* Elimina espacio sobrante en la parte superior */
+    margin-top: 0;
+}
+
+/* Títulos h2 genéricos dentro de las tarjetas */
+h2 {
+    /* Tamaño de letra de 18 píxeles */
+    font-size: 18px;
+    /* Elimina espacio sobrante en la parte superior */
+    margin-top: 0;
+}
+
+/* Formato de listas dentro de los cubos */
+.cubo ul {
+    /* Alinea el texto de la lista a la izquierda para leer bien los nombres */
+    text-align: left;
+    /* Otorga una sangría de 20px a la izquierda para los puntos de la lista */
+    padding-left: 20px;
+    /* Separa la lista 15px del texto que tiene arriba */
+    margin-top: 15px;
+}
+
+/* Formato de los elementos individuales de las listas */
+.cubo li {
+    /* Separa cada elemento 8px del siguiente */
+    margin-bottom: 8px;
+    /* Tamaño de letra de 14 píxeles */
+    font-size: 14px;
+    /* Altura de línea para mejorar la lectura */
+    line-height: 1.4;
+}
+
+/* Formato general de los párrafos */
+p {
+    /* Tamaño de letra de 15 píxeles */
+    font-size: 15px;
+    /* Espaciado entre líneas de texto */
+    line-height: 1.4;
+}
+
+/* Estilos de la sección del pie de página */
+.footer-form {
+    /* Centra el texto del pie de página */
+    text-align: center;
+    /* Espacio interno de 20 píxeles */
+    padding: 20px;
+    /* Separa el footer 20px de la sección superior */
+    margin-top: 20px;
+}
+
+/* Estilo del texto que está dentro del pie de página */
+.footer-form p {
+    /* Cambia el texto del mensaje a color morado/azul oscuro */
+    color: rgb(63, 20, 180);
+    /* Pone el texto en negrita */
+    font-weight: bold;
+    /* Tamaño de letra de 18 píxeles */
+    font-size: 18px;
+}
